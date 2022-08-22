@@ -5,7 +5,7 @@ export default function About() {
     <section id="sobre" className="w-full min-h-screen bg-gray-300 p-2">
       <div className="container h-full w-full mx-auto grid gap-2 grid-cols-1 lg:grid-rows-2 lg:grid-cols-2">
         <div className="h-full w-full flex items-center flex-col justify-center">
-          <div className="w-24 h-24 relative">
+          <div className="w-24 h-24 relative lg:w-48 lg:h-48">
             <Image
               src={"/myself.jpg"}
               alt="Eu"
