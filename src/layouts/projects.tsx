@@ -5,12 +5,12 @@ export default function Projects() {
   return (
     <section
       id="projetos"
-      className="w-full h-screen flex bg-white"
+      className="w-full min-h-screen flex bg-white p-2"
     >
       <div className="container mx-auto">
         <h1 className="text-6xl font-bold mt-16 text-black">Projetos</h1>
         <br />
-        <div className="w-full mt-16 flex items-center gap-4 justify-around">
+        <div className="w-full mt-16 flex items-center gap-4 justify-around flex-col lg:flex-row">
           <ProjectCard
             title="React Candy Crush"
             content="Uma simples réplica do famoso jogo Candy Crush feito inteiramente com ReactJS!"

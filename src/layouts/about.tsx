@@ -2,17 +2,17 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section id="sobre" className="w-full h-screen bg-gray-300">
-      <div className="container h-full w-full mx-auto grid grid-rows-2 gap-2 grid-cols-2">
+    <section id="sobre" className="w-full min-h-screen bg-gray-300 p-2">
+      <div className="container h-full w-full mx-auto grid gap-2 grid-cols-1 lg:grid-rows-2 lg:grid-cols-2">
         <div className="h-full w-full flex items-center flex-col justify-center">
-          <Image
-            src={"/myself.jpg"}
-            alt="Eu"
-            width={256}
-            height={256}
-            layout="fixed"
-            className="rounded-full object-cover"
-          />
+          <div className="w-24 h-24 relative">
+            <Image
+              src={"/myself.jpg"}
+              alt="Eu"
+              layout="fill"
+              className="rounded-full object-cover"
+            />
+          </div>
         </div>
         <div className="h-full w-full mt-16">
           <h1 className="text-6xl font-bold text-orange-500">Sobre</h1>
@@ -27,8 +27,8 @@ export default function About() {
           <br />
           <p className="text-lg text-gray-700 text-justify">
             Gosto, sempre de ajudar o próximo compartilhando conhecimento. Tenho
-            prazer por trabalhar em equipe, mantendo uma boa comunicação com meus
-            colegas para uma melhor clareza e aprofundamento em que estou
+            prazer por trabalhar em equipe, mantendo uma boa comunicação com
+            meus colegas para uma melhor clareza e aprofundamento em que estou
             trabalhando.
           </p>
         </div>
@@ -36,7 +36,10 @@ export default function About() {
           <h1 className="text-3xl font-semibold text-orange-500">
             Principais Tecnologias
           </h1>
-          <p className="text-xl text-gray-700">Essas são as principais tecnologias com as quais eu trabalho e tenho segurança.</p>
+          <p className="text-xl text-gray-700">
+            Essas são as principais tecnologias com as quais eu trabalho e tenho
+            segurança.
+          </p>
           <br />
           <ul className="text-xl text-gray-700 ml-5">
             <li>NestJS</li>

@@ -1,11 +1,11 @@
 export default function Contact() {
   return (
-    <section id="contato" className="w-full h-[50vh] bg-black">
+    <section id="contato" className="w-full h-[50vh] bg-black p-2">
       <div className="container mx-auto pt-24">
         <h1 className="text-5xl text-gray-500 font-bold">Contato</h1>
         <hr className="border-gray-500" />
         <br />
-        <ul className="w-full flex items-center gap-8 justify-start">
+        <ul className="w-full flex flex-wrap items-center gap-8 justify-center">
           <li>
             <a
               className="text-gray-400 text-lg"
