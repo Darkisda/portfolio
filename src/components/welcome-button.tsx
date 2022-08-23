@@ -14,10 +14,7 @@ export default function WelcomeButton({ children }: Props) {
       <div 
         className="
           rounded-full w-[6.25rem] bg-black 
-          hover:bg-gradient-to-r 
-          hover:from-fuchsia-500 
-          hover:to-orange-500 
-          transition-all duration-300
+          hover:bg-transparent
         ">
         {children}
       </div>
