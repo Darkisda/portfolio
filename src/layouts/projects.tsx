@@ -1,4 +1,5 @@
 import Image from "next/image";
+import BackButton from "../components/back-button";
 import ProjectCard from "../components/project-card";
 
 export default function Projects() {
@@ -7,6 +8,7 @@ export default function Projects() {
       id="projetos"
       className="w-full min-h-screen flex bg-white p-2"
     >
+      <BackButton />
       <div className="container mx-auto">
         <h1 className="text-6xl font-bold mt-16 text-black">Projetos</h1>
         <br />

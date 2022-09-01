@@ -1,72 +1,14 @@
-import { useCallback } from "react";
-import Particles from "react-particles";
-import { loadFull } from "tsparticles";
-
+import { useContext } from "react";
 import WelcomeButton from "../components/welcome-button";
+import { ApplicationContext } from "../context/application-provider";
 
 export default function Welcome() {
-  const particlesInit = useCallback(async (engine: any) => {
-    await loadFull(engine);
-  }, []);
-
-  const particlesLoaded = useCallback(async (container: any | undefined) => {},
-  []);
+  const { setSelected } = useContext(ApplicationContext)
 
   return (
-    <div className="w-full h-screen relative bg-black">
-      <Particles
-        id="tsparticle"
-        init={particlesInit}
-        loaded={particlesLoaded}
-        options={{
-          fpsLimit: 120,
-          particles: {
-            color: {
-              value: "#3d3d3d",
-            },
-            links: {
-              color: "#3d3d3d",
-              distance: 150,
-              enable: true,
-              opacity: 0.5,
-              width: 1,
-            },
-            collisions: {
-              enable: true,
-            },
-            move: {
-              direction: "none",
-              enable: true,
-              outModes: {
-                default: "bounce",
-              },
-              random: true,
-              speed: 4,
-              straight: true,
-            },
-            number: {
-              density: {
-                enable: true,
-                area: 800,
-              },
-              value: 30,
-            },
-            opacity: {
-              value: 0.5,
-            },
-            size: {
-              value: { min: 1, max: 5 },
-            },
-          },
-          detectRetina: true,
-          style: {
-            position: "absolute",
-            top: "0px",
-          },
-        }}
-      />
+    <div className="w-full bg-black h-screen" >
       <div className="container w-full flex mx-auto z-10">
-        <div className="text-center w-full mt-[25%]">
+        <div className="text-center w-full mt-[25%] animate-welcomeanimation">
           <h1 className="text-8xl font-bold bg-gradient-to-r from-fuchsia-500 to-red-500 bg-clip-text text-transparent animate-text">
             Olá, eu sou o Luan.
           </h1>
@@ -80,17 +22,17 @@ export default function Welcome() {
           </h4>
           <nav className="w-full flex items-center justify-center mt-8 gap-8">
             <WelcomeButton>
-              <a href="#sobre" className="text-white text-lg ">
+              <a href="#sobre" onClick={() => setSelected!('about')} className="text-white text-lg ">
                 Sobre
               </a>
             </WelcomeButton>
             <WelcomeButton>
-              <a href="#projetos" className="text-white text-lg">
+              <a href="#projetos" onClick={() => setSelected!('project')} className="text-white text-lg ">
                 Projetos
               </a>
             </WelcomeButton>
             <WelcomeButton>
-              <a href="#contato" className="text-white text-lg">
+              <a href="#contato" onClick={() => setSelected!('contact')} className="text-white text-lg">
                 Contato
               </a>
             </WelcomeButton>
