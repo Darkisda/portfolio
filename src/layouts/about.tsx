@@ -18,23 +18,22 @@ export default function About() {
       <BackButton />
       <div className="container p-3 lg:max-w-5xl h-full animate-pageanimation flex flex-col lg:flex-row items-start mx-auto">
         <div className="lg:w-1/2 w-full h-full relative">
-          <div className="lg:fixed flex items-center flex-col justify-center">
-            <div className="flex items-center justify-center flex-col w-28 h-28 lg:w-36 lg:h-36 2xl:w-44 2xl:h-44 bg-orange-500 rounded-full hover:bg-gradient-to-r hover:from-fuchsia-500 hover:to-red-500 hover:animate-text">
-              <div className="w-24 h-24 relative lg:w-32 lg:h-32 2xl:w-40 2xl:h-40">
-                <Image
-                  src={"/myself.jpg"}
-                  alt="Eu"
-                  layout="fill"
-                  className="rounded-full object-cover"
-                />
-              </div>
+          <div className="lg:absolute flex items-center flex-col justify-center">
+            <div className="w-24 h-24 relative border-4 rounded-full border-orange-500 lg:w-32 lg:h-32 2xl:w-40 2xl:h-40">
+              <Image
+                src={"/myself.jpg"}
+                alt="Eu"
+                layout="fill"
+                className="rounded-full object-cover"
+              />
             </div>
+
             <div className="text-center lg:text-left">
               <h1 className="text-3xl font-medium text-orange-500">
                 Luan de Souza Nascimento
               </h1>
               <h3 className="text-gray-700 lg:tracking-widest tracking-wide text-lg font-thin leading-3">
-                Desenvolvedor FullStack JS Jr.
+                Desenvolvedor FullStack JS
               </h3>
               <div className="w-full flex flex-row items-center justify-center gap-4 my-4">
                 <button className="p-2 bg-orange-500 rounded-full transition-all duration-300 hover:bg-amber-600 hover:scale-110">
@@ -139,7 +138,7 @@ export default function About() {
           </div>
         </div>
         <div className="lg:w-1/2 pb-10">
-          <div className="h-full w-full mt-10">
+          <div className="lg:h-full w-full mt-10">
             <div className="my-5">
               <h4 className="text-orange-500 text-2xl font-thin">
                 Um pouco da minha história
@@ -156,7 +155,7 @@ export default function About() {
             </p>
             <br />
             <p className="first-letter:ml-4 text-gray-600 font-thin text-justify">
-              Com isso, comecei a mecher nos computadores que existiam na minha
+              Com isso, comecei a mexer nos computadores que existiam na minha
               casa, desmontava, montava-os denovo. Até o dia que eu comprei e
               montei o meu próprio computador, e fiquei entusiasmado em entender
               como funcionava os hardwares e alguns drivers.

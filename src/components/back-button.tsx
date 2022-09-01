@@ -6,8 +6,8 @@ export default function BackButton() {
   const { setSelected } = useContext(ApplicationContext)
 
   return (
-    <button onClick={() => setSelected!('welcome')}>
-      <ArrowLeft  />
+    <button className="absolute top-5 md:left-24 xl:left-56 flex items-center font-semibold" onClick={() => setSelected!('welcome')}>
+      <ArrowLeft size={24}  /> Voltar
     </button>
   )
 }

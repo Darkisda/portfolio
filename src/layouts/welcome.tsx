@@ -22,18 +22,13 @@ export default function Welcome() {
           </h4>
           <nav className="w-full flex items-center justify-center mt-8 gap-8">
             <WelcomeButton>
-              <a href="#sobre" onClick={() => setSelected!('about')} className="text-white text-lg ">
+              <a onClick={() => setSelected!('about')} className="text-white text-lg ">
                 Sobre
               </a>
             </WelcomeButton>
             <WelcomeButton>
-              <a href="#projetos" onClick={() => setSelected!('project')} className="text-white text-lg ">
+              <a onClick={() => setSelected!('project')} className="text-white text-lg ">
                 Projetos
-              </a>
-            </WelcomeButton>
-            <WelcomeButton>
-              <a href="#contato" onClick={() => setSelected!('contact')} className="text-white text-lg">
-                Contato
               </a>
             </WelcomeButton>
           </nav>
