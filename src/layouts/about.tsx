@@ -13,10 +13,10 @@ export default function About() {
   return (
     <section
       id="sobre"
-      className="w-full h-screen overflow-auto bg-gray-300 p-2"
+      className="w-full h-screen overflow-auto bg-gray-300"
     >
       <BackButton />
-      <div className="container p-3 lg:max-w-5xl h-full animate-pageanimation flex flex-col lg:flex-row items-start mx-auto">
+      <div className="container p-3 py-14 lg:max-w-5xl h-full animate-pageanimation flex flex-col lg:flex-row items-start mx-auto">
         <div className="lg:w-1/2 w-full h-full relative">
           <div className="lg:absolute flex items-center flex-col justify-center">
             <div className="w-24 h-24 relative border-4 rounded-full border-orange-500 lg:w-32 lg:h-32 2xl:w-40 2xl:h-40">
