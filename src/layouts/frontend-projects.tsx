@@ -6,7 +6,7 @@ export default function FrontendProjects() {
       <h3 className="text-2xl font-medium text-orange-500">
         Projetos de Frontend
       </h3>
-      <p className="first-letter:ml-4 my-4 text-gray-600 font-thin text-justify">
+      <p className="first-letter:ml-4 my-4 text-gray-300 font-thin text-justify">
         Abaixo estão alguns dos meus projetos de Frotend. Alguns projetos
         utilizam ReactJS com NextJS e outros com VueJS. Todas as aplicações
         estão hospedadas no{" "}

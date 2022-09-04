@@ -7,6 +7,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        blackvariant: "#191919",
+      },
+      backgroundImage: {
+        "radial": "radial-gradient(var(--tw-gradient-stops))",
+      },
       animation: {
         text: "text 4s ease-in-out infinite",
         welcomeanimation: "welcometext 1.5s ease-in-out",

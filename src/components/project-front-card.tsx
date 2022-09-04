@@ -33,7 +33,7 @@ export default function ProjectFrontCard({
         />
       )}
       <div
-        className={`w-full h-full p-2 bg-gradient-to-t from-stone-600/50 to-stone-300/50 backdrop-blur-sm inset-0 absolute transition-all ease-in-out duration-300 text-white flex items-center flex-col justify-center gap-2 ${
+        className={`w-full h-full p-2 bg-gradient-to-t from-gray-800/50 to-gray-600/50 backdrop-blur-sm inset-0 absolute transition-all ease-in-out duration-300 text-white flex items-center flex-col justify-center gap-2 ${
           onHover ? "translate-y-0" : "translate-y-44"
         }`}
       >

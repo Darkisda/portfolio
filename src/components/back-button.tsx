@@ -6,7 +6,7 @@ export default function BackButton() {
     <div className="fixed w-full bg-transparent z-10 backdrop-blur-sm p-4">
       <div className="container max-w-6xl mx-auto">
         <Link href={"/"}>
-          <a className="flex items-center font-semibold text-gray-500 hover:text-gray-700">
+          <a className="flex items-center font-semibold text-gray-300 hover:text-gray-400">
             <ArrowLeft size={24} /> Voltar
           </a>
         </Link>

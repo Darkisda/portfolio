@@ -17,7 +17,7 @@ export default function FixedAbout() {
         <h1 className="text-3xl font-medium text-orange-500">
           Luan de Souza Nascimento
         </h1>
-        <h3 className="text-gray-700 lg:tracking-widest tracking-wide text-lg font-thin leading-3">
+        <h3 className="text-gray-300 lg:tracking-widest tracking-wide text-lg font-thin leading-3">
           Desenvolvedor FullStack JS
         </h3>
         <div className="w-full flex flex-row items-center justify-center gap-4 my-4">
@@ -57,12 +57,12 @@ export default function FixedAbout() {
         </button>
       </div>
       <div className="w-full flex items-center flex-col justify-center my-2">
-        <h3 className="font-thin tracking-wide">
+        <h3 className="font-thin tracking-wide text-gray-300">
           Algumas das minhas capacitações:
         </h3>
-        <ul className="list-disc ml-4">
+        <ul className="ml-4">
           <li>
-            <div className="w-full my-4 text-gray-700">
+            <div className="w-full my-4 text-gray-300">
               <h5 className="text-sm">
                 <span className="font-semibold">Título:</span> Node.Js
                 Microservices: NestJS, RabbitMQ and <br /> Cloud Services
@@ -81,7 +81,7 @@ export default function FixedAbout() {
             </div>
           </li>
           <li>
-            <div className="w-full my-4 text-gray-700">
+            <div className="w-full my-4 text-gray-300">
               <h5 className="text-sm">
                 <span className="font-semibold">Título:</span> Curso Vue JS2 - O
                 Guia Completo (incl. Vue <br /> Ruter & Vuex)
@@ -100,7 +100,7 @@ export default function FixedAbout() {
             </div>
           </li>
           <li>
-            <div className="w-full my-4 text-gray-700">
+            <div className="w-full my-4 text-gray-300">
               <h5 className="text-sm">
                 <span className="font-semibold">Título:</span> NestJS Zero to
                 Hero - Modern Typescript <br /> Back-end Development

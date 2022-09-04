@@ -11,7 +11,7 @@ export default function About() {
         <title>LSN | Sobre</title>
       </Head>
       <main>
-        <div className="w-full h-screen overflow-auto bg-stone-300">
+        <div className="w-full h-screen overflow-auto bg-blackvariant">
           <BackButton />
           <section
             id="sobre"
